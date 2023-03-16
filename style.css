@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span{
+  color: #fff;
+}
+
+.card-music {
+  width: 300px;
+  height: 400px;
+  padding: 14px 14px;
+  background-color: #000;
+  border-radius: 20px;
+  /* box-shadow: 3px 3px 3px 3px #888888; */
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5),
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px 2px rgba(0, 0, 0, 0.5),
+    2px -2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.card-music__thumbnail {
+  width: 100%;
+  height: 60%;
+  background-image: url(./thumbnail.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.card-music__title {
+    color: #fff;
+    margin-top: 10px;
+    line-height: 20px;
+    text-transform: capitalize;
+    
+}
+.card-music__title--small{
+  font-weight: 100;
+  font-size: 13px;
+}
+.card-music__title--large{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.card-music__play-time {
+}
+
+.card-music__control {
+  margin-top: 20px;
+  
+}
+.card-music__control__time-bar__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-music__control__time-bar{
+  width: 70%;
+  height: 10px;
+  background-color: #849492;
+}
+.card-music__control__time-bar__count{
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+}
+.card-music__control__btn {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.card-music__control__btn .icon{
+  border-radius: 30px ;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+}
+.card-music__control__btn button{
+  border-radius: 50%;
+  font-size: 30px;
+}
+.card-music__control__btn button:hover{
+  transition: 0.5s;
+  background-color: rgb(19, 204, 19);
+}

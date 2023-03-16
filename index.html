@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Tiêu chuẩn BEM -->
+    <div class="card-music">
+        <!--begin card-music__thumbnail -->
+        <div class="card-music__thumbnail">
+
+        </div>
+        <!-- end card-music__thumbnail -->
+        <!-- begin card-music__title -->
+        <div class="card-music__title">
+            <span class="card-music__title--small">Iphone</span><br>
+            <span class="card-music__title--large">beautiful in white</span><br>
+            <span class="card-music__title--small">Nguyễn Công ❤️</span>
+        </div>
+        <!-- end card-music__title -->
+        <div class="card-music__play-time">
+
+        </div>
+        <!-- end card-music__play-time -->
+        <div class="card-music__control">
+            <div class="card-music__control__time-bar__wrapper">
+                <span>0.00</span> &ensp;
+                <div class="card-music__control__time-bar">
+                    <div class="card-music__control__time-bar__count"></div>
+                </div> &ensp;
+                <span>4.58</span>
+            </div>
+            <div class="card-music__control__btn">
+                <ion-icon name="chevron-back-outline" class="icon icon-pre"></ion-icon>
+                <button onclick="musicPlay()" id="play" title="Play">
+                    <ion-icon name="play-outline" class=" icon icon-pause"></ion-icon>
+                    <!-- <ion-icon name="pause-outline" class=" icon icon-pause"></ion-icon> -->
+                </button>
+                <ion-icon name="chevron-forward-outline" class="icon icon-next"></ion-icon>
+            </div>
+
+        </div>
+        <!--end card-music__control -->
+    </div>
+    <!-- end card-music -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
